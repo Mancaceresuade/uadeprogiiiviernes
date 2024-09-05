@@ -69,14 +69,13 @@ public class PrimAlgorithm {
 
         // Add edges to the graph (vertex1, vertex2, weight)
         graph.get(0).add(new int[]{1, 1});  // A - B with weight 1
-        graph.get(0).add(new int[]{2, 1});  // A - C with weight 4
         graph.get(1).add(new int[]{0, 1});  // B - A with weight 1
-        graph.get(1).add(new int[]{3, 3});  // B - D with weight 3
+        graph.get(0).add(new int[]{2, 1});  // A - C with weight 4
         graph.get(2).add(new int[]{0, 1});  // C - A with weight 4
-        graph.get(2).add(new int[]{3, 2});  // C - D with weight 2
+        graph.get(1).add(new int[]{3, 3});  // B - D with weight 3
         graph.get(3).add(new int[]{1, 3});  // D - B with weight 3
-        graph.get(3).add(new int[]{2, 2});  // D - C with weight 2
-
+        graph.get(2).add(new int[]{3, 5});  // C - D with weight 2
+        graph.get(3).add(new int[]{2, 5});  // D - C with weight 2
         primMST(numVertices, graph);
     }
 }
