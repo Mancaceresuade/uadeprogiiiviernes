@@ -63,14 +63,16 @@ class UnionFind {
 public class Kruskal {
 
     public static void main(String[] args) {
-        int V = 4; // Número de vértices
+        int V = 5; // Número de vértices
         List<Arista> aristas = new ArrayList<>();
 
         // Agregar aristas al grafo
         aristas.add(new Arista(0, 1, 1));
-        aristas.add(new Arista(0, 2, 4));
+        aristas.add(new Arista(0, 2, 1));
         aristas.add(new Arista(1, 3, 3));
         aristas.add(new Arista(2, 3, 2));
+        aristas.add(new Arista(0, 4, 5));
+        aristas.add(new Arista(3, 4, 4));
 
         // Crear el árbol de recubrimiento mínimo (MST) usando el algoritmo de Kruskal
         List<Arista> mst = kruskal(V, aristas);

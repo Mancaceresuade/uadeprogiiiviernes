@@ -74,8 +74,8 @@ public class PrimAlgorithm {
         graph.get(2).add(new int[]{0, 1});  // C - A with weight 4
         graph.get(1).add(new int[]{3, 3});  // B - D with weight 3
         graph.get(3).add(new int[]{1, 3});  // D - B with weight 3
-        graph.get(2).add(new int[]{3, 5});  // C - D with weight 2
-        graph.get(3).add(new int[]{2, 5});  // D - C with weight 2
+        graph.get(2).add(new int[]{3, 1});  // C - D with weight 2
+        graph.get(3).add(new int[]{2, 1});  // D - C with weight 2
         primMST(numVertices, graph);
     }
 }

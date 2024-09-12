@@ -75,14 +75,11 @@ public class DijkstraUndirected {
         Graph graph = new Graph(vertices);
 
         // Añadir aristas al grafo no dirigido
-        graph.addEdge(0, 1, 4);
-        graph.addEdge(0, 2, 1);
-        graph.addEdge(1, 3, 1);
-        graph.addEdge(2, 3, 5);
-        graph.addEdge(3, 4, 3);
-        graph.addEdge(4, 5, 1);
-        graph.addEdge(3, 5, 2);
-        graph.addEdge(2, 5, 1);
+        graph.addEdge(0, 1, 1);// A->B
+        graph.addEdge(0, 2, 2);// A->C
+        graph.addEdge(1, 2, 2);// B->C
+        graph.addEdge(1, 3, 6);// B->D
+        graph.addEdge(2, 3, 3);// C->D
 
         graph.dijkstra(0);  // Ejecutar Dijkstra desde el vértice 0
     }
